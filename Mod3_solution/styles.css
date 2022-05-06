@@ -1,0 +1,201 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #0d283d; /*тёмно-синий фон*/
+  color: #0d283d;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px black, 0 0 1em #fff7cc;
+}
+h2 {
+  margin-bottom: 0px;
+  font-size: 2.2em;
+  font-family: "Times New Roman", Times, serif;
+  font-variant: small-caps;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 2px 2px 4px black, 0 0 1em #fff7cc;
+  background-color: #dbde1d;
+  border-radius: 20px 20px 0px 0px;
+}
+h3 {
+  font-size: 1.5em;
+  font-family: "Times New Roman", Times, serif;
+  font-variant: small-caps;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 0.5em #dbde1d;
+  border-radius: 20px 20px 20px 20px;
+  background: linear-gradient(90deg, rgba(219,222,29,1) 0%, rgba(255,247,204,1) 50%, rgba(219,222,29,1) 100%);
+  cursor:pointer;
+}
+h4 {
+  font-size: 1em;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 2px 2px 4px black, 0 0 1em #fff7cc;
+  background-color: #dbde1d;
+  border-radius: 0px 0px 20px 20px;
+}
+h5 {
+  font-size: .5em;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 2px 2px 4px black, 0 0 1em #fff7cc;
+}
+
+p {
+  margin: 0;
+}
+
+.box {
+  margin-top: -10px;
+  height: 20px;
+  background-color: #dbde1d;
+  border-radius: 0px 0px 20px 20px;
+}
+
+table.Pansy{
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-family: "Times New Roman", Times, serif;
+  font-variant: small-caps;
+  text-decoration: none;
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+  height: auto; 
+ }
+  table.Pansy td {
+  font-size: 15px;
+  color:#0d283d;
+  white-space: pre-wrap;
+  padding: 5px 10px;
+  line-height: 15px;
+  vertical-align: middle;
+}
+  table.Pansy tr:hover {
+  background: linear-gradient(90deg, rgba(219,222,29,1) 0%, rgba(251,250,100,1) 35%, rgba(255,247,204,1) 100%);
+  cursor:pointer;
+}
+
+#header-nav{
+  background-color: #dbde1d; /*горчичный*/
+  font-variant: small-caps;
+  font-weight: normal;
+  color: #0d283d;
+  border-radius: 0px 0px 20px 20px;
+  border: 0;
+}
+.navbar-default .navbar-brand{
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 3em;
+  color: #0d283d;
+}
+.navbar-default .navbar-collapse{
+  border: none;
+}
+#nav-list a:active{
+  border-top: none;
+  border: none; 
+  border-width: 0px;
+}
+#nav-list a{
+  text-align: center;
+}
+#nav-list a:hover{
+  background: #dbde1d; /*горчичная полоска в навигации при наведении*/
+  color: #0d283d;
+}
+.glyphicon{
+  margin-right: 5px;  
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border: 1px solid #0d283d; 
+  border-radius: 20px;
+  background: linear-gradient(90deg, #fff7cc 0%, #fff7cc 50%, #fff7cc 100%);
+}
+.section-background-color{
+  background-color: #fff7cc; /*бежевый*/
+  padding: 0px 25px 5px 25px;
+} 
+
+/*** Large devices only ***/
+@media (min-width: 1200px) {
+  .col-lg-12{
+    width: 100%;
+  }
+}
+
+/*** Medium devices only ***/
+@media (min-width: 767px) and (max-width: 1199px) {
+   .col-md-12{
+    width: 100%;
+  }
+
+  #company-name{
+    font-size: 3em;
+    color: #0d283d;
+  }
+
+  .internal-link{
+    color: black;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+   a:hover{
+    color: #0d283d;
+  }
+}
+
+
+/*** Small devices only ***/
+@media (max-width: 767px) {
+.col-md-12{
+    width: 100%;
+  }
+
+  h1{
+    text-align: center;
+    display: inline-block;
+  }
+    #company-name{
+    font-size: 6vw;
+    color: #0d283d;
+  }
+h2 {
+    font-size: 6vw;
+  }
+  
+  .navbar-default .navbar-collapse{
+    border: none;
+    background-color: #fff7cc; /*бежевый*/
+  }
+
+  #beef{
+    margin: 10px 0px;
+  }
+ 
+  .internal-link{
+    color: black;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+   a:hover{
+    color: #0d283d;
+  }
+} /*end media query*/
