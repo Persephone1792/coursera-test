@@ -29,7 +29,6 @@ body{
     letter-spacing: 2px;
     text-transform: uppercase;
     text-anchor: middle;
-    text-shadow: 2px 2px 4px black, 0 0 1em #fff7cc;
 }
 .a-stroke .text:nth-child(5n + 1) {
     stroke: #dbde1d;
