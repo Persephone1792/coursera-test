@@ -12,9 +12,9 @@ Navbar - Mobile View: Create a simple menu button (3 horizontal bars). When the 
 - [Assignment 4](https://github.com/Persephone1792/coursera-test/tree/gh-pages/Mod4_solution) - In this assignment, you are going to loop over an array of names and print out either a hello or goodbye to that name to the browser console. If the name starts with a letter j or J, you are to print out Goodbye JSomeName. If the name starts with any other letter, you are to print out Hello SomeName. [View](https://persephone1792.github.io/coursera-test/Mod4_solution/index.html)
 - [Assignment 5](https://github.com/Persephone1792/coursera-test/tree/gh-pages/Mod5_solution) - The front page of our web app contains 3 clickable tiles: Menu, Specials, and Map. If you click on the Specials tile, you will be taken to a single category page where all the menu items that belong to the Specials menu category will be shown. Your task in this assignment is to alter this behavior such that when the user clicks on the Specials tile, the web app takes the user to a random single category menu page, listing menu items in the category, be it "Lunch", "Dinner", "Sushi", etc. That way, any random category can become the Specials! [View](https://persephone1792.github.io/coursera-test/Mod5_solution/index.html)
 
-## Wiews and results
+## Views and results
 
-| Wiew | Result |
+| View | Result |
 | ------ | ------ |
 | [Assignment 2](https://persephone1792.github.io/coursera-test/Mod2%20solution/index.html) | 100% |
 | [Assignment 3](https://persephone1792.github.io/coursera-test/Mod3/index.html) | 100% |
