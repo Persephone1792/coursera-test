@@ -1,108 +1,233 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>David Chu's China Bistro</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-  </head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  	  <title>Сергій Горбатюк</title>	
+</head>
+
 <body>
-  <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
-            <div id="logo-img" alt="Logo image"></div>
-          </a>
-
-          <div class="navbar-brand">
-            <a href="index.html"><h1>David Chu's China Bistro</h1></a>
-            <p>
-              <img src="images/star-k-logo.png" alt="Kosher certification">
-              <span>Kosher Certified</span>
-            </p>
-          </div>
-
-          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+	<header class="header">
+	<div class="header__inner">
+    <div class="blueline">
+    	<div class="whiteline">
+    		<div class="titlename">
+    		    <h1>Сергій Горбатюк</h1>
+    		    <h2>ортопед-травматолог <br> мануальний терапевт</h2>
+    		</div>
+    		<div class="call"><a href="#"><img class="callbutton" src="images/call.png" alt="Зателефонувати"></a></div>
+    		<div class="phone"><a href="tel:+380673585597"><img class="callbutton" src="images/call.png" alt="Зателефонувати"></a></div>
+    		<div class="navigation" id="myNav">
+                <a href="#home" class="active"><img class="homebutton" src="images/home.png" alt="Home"></a>
+                <a href="#about">Про мене</a>
+                <a href="#publications">Публікації</a>
+                <a href="#faq">FAQ</a>
+                <a href="#reviews">Відгуки</a>
+                <a href="#contacts">Контакти</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+    		</div>
+    	</div>
+    	<div class="hours"><p id="phonehours">Прийом відбувається за попереднім записом<br>
+                                              15:30 - 20:00 (Пн-Пт)</p>
         </div>
-        
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-           <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li id="navHomeButton" class="visible-xs active">
-              <a href="index.html">
-                <span class="glyphicon glyphicon-home"></span> Home</a>
-            </li>
-            <li id="navMenuButton">
-              <a href="#" onclick="$dc.loadMenuCategories();">
-                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
-            </li>
-            <li id="phone" class="hidden-xs">
-              <a href="tel:410-602-5008">
-                <span>410-602-5008</span></a><div>* We Deliver</div>
-            </li>
-          </ul><!-- #nav-list -->
-        </div><!-- .collapse .navbar-collapse -->
-      </div><!-- .container -->
-    </nav><!-- #header-nav -->
-  </header>
-
-  <div id="call-btn" class="visible-xs">
-    <a class="btn" href="tel:410-602-5008">
-    <span class="glyphicon glyphicon-earphone"></span>
-    410-602-5008
-    </a>
-  </div>
-  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
-
-  <div id="main-content" class="container"></div>
-
-  <footer class="panel-footer">
-    <div class="container">
-      <div class="row">
-        <section id="hours" class="col-sm-4">
-          <span>Hours:</span><br>
-          Sun-Thurs: 11:15am - 10:00pm<br>
-          Fri: 11:15am - 2:30pm<br>
-          Saturday Closed
-          <hr class="visible-xs">
-        </section>
-        <section id="address" class="col-sm-4">
-          <span>Address:</span><br>
-          7105 Reisterstown Road<br>
-          Baltimore, MD 21215
-          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
-          <hr class="visible-xs">
-        </section>
-        <section id="testimonials" class="col-sm-4">
-          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
-          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
-        </section>
-      </div>
-      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
     </div>
-  </footer>
+    </div>
+    </header>
+    <div id="home" class="navjs">
+    	<div class="tato"><img src="images/tato.jpg" alt="Сергій Горбатюк"></div>
+    	<div class="citate">
+    		<p id="bigcit">“Medicus philosophus est;<br>  non enim multa est<br> inter sapientiam et<br> medicinam differentia.”</p>
+    		<p id="lilcit">Лікар – це філософ, адже нема великої різниці <br>між мудрістю і медициною. <br>(Гіпократ)</p>
+    	</div>
+    </div>
+    <div id="about" class="navjs">
+    	<div class="abouttitle">
+    		<h1>Про мене</h1>
+    	</div>
+    	<div class="aboutphoto">
+    	<div class="photo">
+    		<img src="images/tato2.png" alt="Доктор Горбатюк читає лекцію">
+    	</div></div>
+    	<div class="abouttext">
+    		<p>Лікар ортопед-травматолог вищої кваліфікаційної категорії, завідувач відділення медико-соціальної реабілітації (травматологічно-ортопедичного профілю) Центру "КРОК". Приватний лікар, мануальний терапевт.</p>
+    		<p>25 років займаюся реабілітацією осіб з інвалідністю.</p>
+    		<p>Веду консультативний прийом пацієнтів iз захворюваннями та травмами опорно-рухового апарату, а саме:</p>
+    		<ul class="rectanglelist">
+                <li><p>наслідками спинномозкових травм;</p></li>
+                <li><p>травмами та захворюваннями сухожилків, зв'язок, м'язів;</p></li>
+                <li><p>травмами та захворюваннями кісток, суглобів та хребта;</p></li>
+                <li><p>ампутаційними куксами кінцівок;</p></li>
+                <li><p>системними захворюваннями сполучної тканини з порушенням функції опори та руху;</p></li>
+                <li><p>вродженими аномаліями розвитку опорно-рухового апарату з порушеннями його функції.</p></li>
+                <li><p>захворюваннями периферичної нервової системи з порушенням функції опори та руху та ін.</p></li>
+            </ul>
+            <p>Окрім технологій ортопедії і травматології, володію методиками:</p>
+            <ul class="rectanglelist">
+                <li><p>класичної мануальної медицини;</p></li>
+                <li><p>постізометричої релаксації м'язів, ортобіономії та інших м'яких технік мануальної терапії;</p></li>
+                <li><p>класичної рефлексотерапії та акупресури.</p></li>
+            </ul>
+            <p>У 1994 році закінчив лікувальний факультет Тернопільського державного медичного інституту ім. акад. І.Я.Горбачевського.</p>
+            <p>У 2007 році отримав другу вищу освіту – закінчив факультет здоров’я, фізичної культури і спорту Міжнародного економіко-гуманітарного університету ім. акад. Степана Дем’янчука, отримав спеціальність – спеціаліст з фізичної реабілітації. </p>
+            <p>В період з 2001 по 2016 роки працював за сумісництвом на посадах викладача, старшого викладача, доцента кафедри фізичної реабілітації Міжнародного економіко-гуманітарного університету ім. акад. Степана Дем’янчука, вів курс фізичної реабілітації при порушеннях опорно-рухового апарату.</p>
+            <p>У 2001 році пройшов спеціалізацію по рефлексотерапії (Харківська медична академія післядипломної освіти). Також пройшов курси стажування по лікувальній фізкультурі та по фізіотерапії, курси тематичного удосконалення по лазеротерапії (Київ), по мануальній терапії (Київ, Харків, Запоріжжя, Львів), багаторазово курси тематичного удосконалення з актуальних питань травматології і ортопедії та з питань терапії больових синдромів тощо.</p>
+            <p>2008 рік – курси стажування, відділ реабілітації Воєводського спеціалізованого шпиталю м. Сєдльце, Республіка Польща.</p>
+            <p>Є автором більше 20 друкованих праць, в тому числі двох навчальних посібників з фізичної реабілітації для студентів вищих навчальних закладів, та співавтором керівництва по сучасній лазеротерапії.</p>
+    	</div>
+    </div>
+    <div id="publications" class="navjs">
+    	<div class="pubstitle">
+    		<img src="images/publications1.png" alt="Розділ публікацій">
+    		<h1>Публікації</h1>
+    	</div> 
+    	<div class="tablebox">
+    		<table class="pubtab">
+    			<tr>
+    				<td id="colon1"><ul class="publist">
+                                	<li>"Фізична реабілітація при порушеннях опорно-рухового апарату"</li>
+                                	<li>"Современные аспекты лазерной терапии"</li>
+                                	<li>"Фізична реабілітація та рухова активність при порушенях функції опорно-рыхової системи"</li>
+                                	<li>"Фізична реабілітація при травмах опорно-рухового апарату"</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                	<li>" "</li>
+                                </ul></td>
+    				<td id="colon2"><img src="images/books.png" alt="Книги"></td>
+    			</tr>
+    		</table>
+    	</div>
+    </div>
+    <div id="faq" class="navjs">
+    	<div class="faqtitle">
+    		<img src="images/faq.png" alt="FAQ">
+    		<h1>F A Q</h1>
+    	</div>
+    	<div class="faqcont">
+    		<div class="manual0"><img src="images/tato3.png" alt="Доктор Горбатюк"></div>
+    			<div class="manual"><p><b>Мануальна терапія</b>, або <b>лікування руками</b> — вид терапії, спрямований на лікування кістково-м'язової системи, внутрішніх органів за допомогою дії рук. Від звичайного масажу мануальну терапію відрізняють напрями впливу й дозування сили такого впливу. Практично, мануальна терапія являє собою цілий комплекс механічного, або біомеханічного впливу на вражені тканини й сегменти опорно-рухового апарату. <br>
+    		    Мануальна терапія була та залишається одним із найефективніших методів боротьби з болем в області спини та шиї. Цю методику широко застосовують у комплексному лікуванні багатьох захворювань хребта та м'язово-суглобового апарату людини, а в останні роки  також у лікуванні захворювань внутрішніх органів (вісцеральна терапія) і голови (краніо-сакральна терапія). <br>
+    		    Мануальна терапія успішно застосовується для лікування таких захворювань хребта, як остеохондроз, протрузії та грижі міжхребцевих дисків, порушення постави, сколіоз, м'язово-тонічний синдром, міозит та інших. Ефективна при болях у спині, шиї, попереку, кінцівках, суглобах, у деяких випадках — при запамороченні та частих головних болях. <br>
+    	        За допомогою прийомів мануальної терапії створюється вплив на необхідні сегменти хребта, що дозволяють відновити обмеження рухливості в хребтово-руховому сегменті, усунути суглобові та м'язові блоки, зняти напругу з глибоких м'язів спини. При цьому відбувається звільнення защемлених нервових структур, зменшуються больові відчуття та відновлюється функція хребта.
+    	        Перед проведенням сеансу мануальної терапії, пацієнту бажано пройти одну або декілька діагностичних процедур, залежно від проблеми, що його турбує:</p>
+    	        <ul>
+    	        	<li>рентгенографія;</li>
+    	        	<li>дуплексне сканування судин;</li>
+    	        	<li>КТ / МРТ;</li>
+    	        	<li>апаратна рефлексодіагностикa;</li>
+    	        	<li>електронейроміографія.</li>
+    	        </ul>
+    	        </div>
+    	        <div class="manual2"> <h2>Коли йти на прийом до мануального терапевта?</h2>
+    	            <ul class="manuallist">
+                        <li>Больові відчуття гострого або хронічного характеру в будь-якому відділі хребта. Біль може посилюватися до кінця дня, або загострюватися після фізичного навантаження, а може бути присутнім впродовж усієї доби.</li>
+                        <li>Біль в кульшових, плечових суглобах, а також в суглобах верхніх і нижніх кінцівок у стані спокою, що не залежать від фізичної активності людини.</li>
+                        <li>Біль гострого характеру в суглобах при нахилах, поворотах тулуба.</li>
+                        <li>Порушення постави, яке супроводжується утрудненням вдиху (інспіраторна задишка).</li>
+                        <li>Хронічний головний біль, який поширюються на шийний відділ хребта, мігрень.</li>
+                        <li>Затерпання пальців, зміна відтінку їх шкіри і температури.</li>
+                        <li>Запаморочення, що супроводжуються шумом у вухах (після консультації кардіолога, невролога).</li>
+                        <li>Періодичне або постійне погіршення зору і слуху (після консультації профільних спеціалістів і виключення ними своєї патології).</li>
+                        <li>Зниження концентрації уваги, погіршення пам'яті (після консультації невролога).</li>
+                        <li>Скутість в суглобах (після консультації ревматолога).</li>
+                    </ul>
+                </div>
+    		    <div class="manual3"> <h2>Протипокази до проведення мануальної терапії</h2>
+    	            <ul class="manuallist1">
+                        <li>онкологія;</li>
+                        <li>гострі інфекційні захворювання;</li>
+                        <li>ускладнена вагітність;</li>
+                        <li>психічні захворювання;</li>
+                        <li>свіжі оперативні втручання;</li>
+                        <li>запальні процеси шкіри, підшкірної клітковини, м'язів;</li>
+                        <li>запалення і набряк тканин міжхребцевих суглобів (хвороба Бехтєрєва);</li>
+                        <li>специфічні і неспецифічні інфекційні захворювання хребта та суглобів;</li>
+                        <li>свіжі травми хребта і переломи (до 6 місяців);</li>
+                        <li>дискові мієлопатії;</li>
+                        <li>виражені аномалії розвитку;</li>
+                        <li>вік понад 65 років (остеопороз);</li>
+                        <li>захворювання хребта в стадії загострення;</li>
+                        <li>порушення мозкового або спинального кровообігу;</li>
+                        <li>захворювання внутрішніх органів, у стадії загострення;</li>
+                        <li>захворювання внутрішніх органів, що потребують оперативного втручання</li>
+                    </ul>
+                </div>
+    	</div>
+    </div>
+    <div id="reviews" class="navjs">
+    	<div class="syn">
+    	<div class="wh">
+    	<div class="sim-slider">
+            <ul class="sim-slider-list">
+                <li><img src="images/white.png" alt="screen"></li> <!-- це екран -->
+                <li class="sim-slider-element"><img src="images/1.png" alt="1"></li>
+                <li class="sim-slider-element"><img src="images/2.png" alt="2"></li>
+                <li class="sim-slider-element"><img src="images/3.png" alt="3"></li>
+                <li class="sim-slider-element"><img src="images/4.png" alt="4"></li>
+                <li class="sim-slider-element"><img src="images/5.png" alt="5"></li>
+            </ul>
+        <div class="sim-slider-arrow-left"></div>
+        <div class="sim-slider-arrow-right"></div>
+        <div class="sim-slider-dots"></div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <footer class="footercontacts" id="contacts">
+    	<div class="allmap">
+    	<div class="map">
+    		<a href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B8+%D0%9A%D0%B0%D1%80%D0%BD%D0%B0%D1%83%D1%85%D0%BE%D0%B2%D0%B0,+31,+%D0%A0%D1%96%D0%B2%D0%BD%D0%B5,+%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0,+33000/@50.60524,26.26646,15z/data=!4m5!3m4!1s0x472f1340206b60d7:0x741368dd9f284fe1!8m2!3d50.6052403!4d26.2664604?hl=uk" target="_blank">
+                <div id="map-tile">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2532.177440688257!2d26.2642717!3d50.6052403!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f1340206b60d7%3A0x741368dd9f284fe1!2z0LLRg9C70LjRhtGPINCc0LjQutC-0LvQuCDQmtCw0YDQvdCw0YPRhdC-0LLQsCwgMzEsINCg0ZbQstC90LUsINCg0ZbQstC90LXQvdGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNGX0L3QsCwgMzMwMDA!5e0!3m2!1suk!2sde!4v1660588000889!5m2!1suk!2sde" width="100%" height="150" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                </div>
+            </a>
+        </div>
+        </div>
+        <div class="contacts">
+        	<div id="adress">
+                <p>Рівне, вул. Миколи Карнаухова, 31, офіс 504</p>
+                <hr>
+            </div>
+            <div id="phonenumber">
+                <a href="tel:+380673585597">+380673585597</a>
+            </div>
+        </div>
+        <div class="weekhours">
+        	<p>Пн 15:30-20:00<br>
+                 Вт 15:30-20:00<br>
+                 Ср 15:30-20:00<br>
+                 Чт 15:30-20:00<br>
+                 Пт 15:30-20:00<br></p>
+        </div>
+        <div class="copy"><p>&copy; 2022 by Olga Kravchenko</p></div>
+    </footer>
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/ajax-utils.js"></script>
-  <script src="js/script.js"></script>
+<!-- підключення слайдера -->
+<script src="script/sim-slider.js"></script>
+<!-- виклик слайдера -->
+<script>new Sim()</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script/script.js"></script>
+
 </body>
 </html>
